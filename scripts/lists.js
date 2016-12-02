@@ -5,6 +5,11 @@ js';
 document.head.appendChild(imported);
 
   //Script for list generation/manipulation-
+  
+  var word_list = ['A', 'a', 'aa', 'aal', 'aalii', 'aam', 'Aani', 'aardvark',
+                   'aardwolf', 'Aaron', 'Aaronic', 'Aaronical', 'Aaronite',
+                   'Aaronitic', 'Aaru', 'Ab', 'aba', 'Ababdeh', 'Ababua', 
+                   'abac', 'abaca', 'abacate', 'abacay'];
 
 $(document).ready(function() {
 
