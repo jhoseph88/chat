@@ -1,4 +1,3 @@
-    //<script src="/Users/CCB/desktop/eecs/workspace/brainstorm_js/scripts/bundle.js"></script>
 var imported = document.createElement('script');
 imported.src = 'scripts/bundle.js';
 document.head.appendChild(imported);
@@ -25,8 +24,8 @@ $(document).ready(function() {
   
   // Populate background with words from word_list for testing
   for (word in word_list) {
-    var new_word = '<li>' + word + '</li>';
-    $('newsprint_background').append(new_word);
+    var new_word = '<li>' + word_list[word] + '</li>';
+    $('#newsprint_background').append(new_word);
   }
 });
 

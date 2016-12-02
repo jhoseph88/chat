@@ -24,3 +24,7 @@
 	cursor: pointer;
 }
 
+#newsprint_background {
+	list-style-type: none;
+}
+
