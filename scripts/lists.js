@@ -5,9 +5,25 @@ js';
 document.head.appendChild(imported);
 
   //Script for list generation/manipulation-
+
+$(document).ready(function() {
+
+  //Bring "new_sentence" input box into focus when page is loaded
+  $(window).on("load", function() {
+    $("[autofocus]").focus();
+  });
+
+  //Eliminate default "Enter a new sentence to start." message in "new_sentence"
+  //box when user clicks on it.
+  $("#new_sentence").click(function() {
+    $(this).text("");
+  });
+});
+
     var sentence_list = [];
     var noun_list = [];
     //adds new sentence to sentence_list
+
     function add_sentence() {
       //extract sentence entered in input field and add to sentence_list
       var new_sentence = document.getElementById('new_sentence').value;
@@ -33,7 +49,7 @@ document.head.appendChild(imported);
         if (tag == 'NN' || tag == 'NNP' || tag == 'NNPS' || tag == 'NNS') {
           noun_list.push(word);
           $("#noun_list").append("<li onclick=\"document.getElementById(\'new_s\
-entence\').value=\'" + word +"\'\"+ class=\'list-group-item\' id=\"noun_item\">" 
+entence\').value=\'" + grd +"\'\"+ class=\'list-group-item\' id=\"noun_item\">" 
           + word + "</li>");
         }
       }

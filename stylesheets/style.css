@@ -1,10 +1,18 @@
+/*Gets rid of focus on input element (blue outline in browsers)*/
+#new_sentence:focus {outline: none; }
+
 #brainstorm_title {
 	margin-top: 2%;
 }
-
+/*Enter new sentence input box*/
 #new_sentence {
-	margin-top: 4%;
-	margin-bottom: 3%;
+	position: absolute;
+	margin-top: 20%;
+	margin-left: 30%;
+	font-size: 30px;
+	max-width: 40%;
+	min-width: 30%;
+	align-items: center;
 }
 
 #new_sentence_entry {
@@ -16,6 +24,3 @@
 	cursor: pointer;
 }
 
-#noun_item:active {
-	background-color: lavender;
-}

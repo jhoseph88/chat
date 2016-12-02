@@ -1,0 +1,19 @@
+@keyframes shimmer {
+  0% {
+    background-position-x: 0%; }
+  100% {
+    background-position-x: 100%; } }
+#shim {
+background-color:#222 ;
+background:linear-gradient(left top, right top, from(#222), to(#222), color-stop(0.7, #fff)); 
+background-repeat:no-repeat;
+-webkit-background-size: 100px;
+color: rgba(255, 255, 255, 0.2);
+-webkit-background-clip: text;
+-webkit-animation-name: shimmer;
+-webkit-animation-duration: 5s;
+-webkit-animation-iteration-count: infinite;
+text-align: center;
+}
+
+/*# sourceMappingURL=shimmer.css.map */

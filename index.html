@@ -9,55 +9,41 @@
   <script src="http://ajax.googleapis.com/ajax/libs/jquery/2.0.0/jquery.min.js">
   </script>
 
-  <script type="text/javascript" src="/Users/CCB/desktop/eecs/workspace/\
-brainstorm_js/scripts/lists.js"></script>
+  <script type="text/javascript" src="scripts/lists.js"></script>
 
-  <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/\
-css/bootstrap.min.css">
+  <!-- Latest compiled and minified CSS -->
+  <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
 
-  <link rel="stylesheet" type="text/css" href="/Users/CCB/desktop/eecs/workspace
-\/brainstorm_js/stylesheets/style.css">
+
+  <link rel="stylesheet" type="text/css" href="stylesheets/style.css">
+  <!--Shimmer effect for sentence_list in background-->
+  <link rel="stylesheet" type="text/css" href="stylesheets/shimmer.css">
 
 </head>
 <body>
 
+   <div id="shim">I hope this shimmers.</div>
+
 <div class="container-fluid">
-<div class="row">
 
-  <div class="col-md-12">
-    <div class="jumbotron" id="brainstorm_title"><!--jumbotron-->
-      <h1>Brainstorm App</h1> 
-      <p>
-      Use this app to aid your creative writing process. Bennett's 
-      instructions, etc.
-      </p>
-    </div><!--End of "jumbotron-->
-  </div><!--End of "col-md-12"-->
-
-</div><!--End of "row"-->
 
 <div class="row">
 
-  <div class="col-md-4" id-"first_column">
-    <h2 id="new_sentence_entry">Enter a new sentence:</h2>
-    <input type="text" class="form-control" id="new_sentence"/>
-    <button type="button" class="btn btn-primary" id="new_sentence_button" 
-          onclick="add_sentence()">
-    Submit New Sentence
-    </button>
-  </div><!--End of "col-md-4"-->
+  <div class="col-md-12" id-"first_column">
+    <div id="new_sentence" autofocus="true" contenteditable="true">
+    <!--Enter a new sentence to start...-->What are you thinking about?
+    </div>
 
   <p>
 
-  <div class="col-md-4" id="second_column">
-    <h2>Sentence List:</h2>
+  <!--<div class="col-md-4" id="second_column">-->
     <ul class="list-group" id="sentence_list"></ul>
-  </div><!--End of "col-md-4"-->
+  <!--</div>--><!--End of "col-md-4"-->
 
-  <div class="col-md-4" id="third_column">
-    <h2>Noun List:</h2>
+  <!--<div class="col-md-4" id="third_column">-->
+    <!--<h2>Noun List</h2>-->
     <ul class="list-group" id="noun_list"></ul>
-  </div><!--End of "col-md-4"-->
+  </div><!--End of "col-md-12"-->
 
   </p>
 </div><!--End of "row"-->
