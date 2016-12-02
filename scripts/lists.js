@@ -23,6 +23,12 @@ $(document).ready(function() {
   $("#new_sentence").click(function() {
     $(this).text("");
   });
+  
+  // Populate background with words from word_list for testing
+  for (word in word_list) {
+    var new_word = '<li>' + word + '</li>';
+    $('newsprint_background').append(new_word);
+  }
 });
 
     var sentence_list = [];
